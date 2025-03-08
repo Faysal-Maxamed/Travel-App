@@ -95,8 +95,11 @@ class HomeScreen extends StatelessWidget {
             ),
             Expanded(
               child: Container(
-                margin:
-                    EdgeInsets.only(top: 150, left: 20, right: 20, bottom: 40),
+                margin: EdgeInsets.only(
+                  top: 190,
+                  left: 20,
+                  right: 20,
+                ),
                 decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(20),
@@ -193,12 +196,72 @@ class HomeScreen extends StatelessWidget {
                         ),
                       ),
                       SizedBox(
+                        height: 10,
+                      ),
+                      Row(
+                        children: [
+                          Expanded(
+                            child: Container(
+                              padding: EdgeInsets.symmetric(horizontal: 15),
+                              height: 70,
+                              width: 150,
+                              decoration: BoxDecoration(
+                                color: Colors.grey.shade100,
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text("Passengers"),
+                                  Text(
+                                    "1 Adult",
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        letterSpacing: 1.0),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            width: 10,
+                          ),
+                          Expanded(
+                            child: Container(
+                              padding: EdgeInsets.symmetric(horizontal: 15),
+                              height: 70,
+                              width: 150,
+                              decoration: BoxDecoration(
+                                color: Colors.grey.shade100,
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text("Class"),
+                                  Text(
+                                    "Economy",
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        letterSpacing: 1.0),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          )
+                        ],
+                      ),
+                      SizedBox(
                         height: 30,
                       ),
                       ElevatedButton(
                         onPressed: () {},
                         style: ElevatedButton.styleFrom(
                             backgroundColor: Color(0xff4C6EF5),
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(10)),
                             minimumSize: Size(double.infinity, 50)),
                         child: Center(
                           child: Text(
@@ -206,7 +269,7 @@ class HomeScreen extends StatelessWidget {
                             style: TextStyle(color: Colors.white, fontSize: 20),
                           ),
                         ),
-                      )
+                      ),
                     ],
                   ),
                 ),
