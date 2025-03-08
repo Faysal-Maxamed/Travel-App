@@ -31,7 +31,7 @@ class DetailScreen extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       IconButton(
-                        onPressed: () {},
+                        onPressed: () => Navigator.pop(context),
                         style: IconButton.styleFrom(
                           side: BorderSide(color: Colors.white, width: 1),
                         ),
