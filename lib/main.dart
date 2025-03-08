@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:line_icons/line_icons.dart';
+import 'package:travel_app/detail.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -142,10 +143,18 @@ class HomeScreen extends StatelessWidget {
                       Stack(
                         clipBehavior: Clip.none,
                         children: [
-                          FlightWidget(
-                            firstText: "DXB",
-                            locationText: "Dubai,UAE",
-                            whereText: "From",
+                          GestureDetector(
+                            onTap: () => Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (_) => DetailScreen(),
+                              ),
+                            ),
+                            child: FlightWidget(
+                              firstText: "DXB",
+                              locationText: "Dubai,UAE",
+                              whereText: "From",
+                            ),
                           ),
                           Positioned(
                               right: 10,
