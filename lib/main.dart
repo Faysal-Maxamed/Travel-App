@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:line_icons/line_icons.dart';
+import 'package:travel_app/boarding_pass.dart';
 import 'package:travel_app/flight_detail.dart';
 import 'package:travel_app/flight_result.dart';
 
@@ -26,7 +27,7 @@ class HomeScreen extends StatelessWidget {
               padding: EdgeInsets.all(20),
               width: double.infinity,
               decoration: BoxDecoration(
-                color: Color(0xff1B1F4B),
+                color: Color(0xffFFC107),
                 borderRadius: BorderRadius.only(
                   bottomLeft: Radius.circular(30),
                   bottomRight: Radius.circular(30),
@@ -162,7 +163,8 @@ class HomeScreen extends StatelessWidget {
                               bottom: -15,
                               child: IconButton(
                                 style: IconButton.styleFrom(
-                                    backgroundColor: Color(0xff4C6EF5)),
+                                  backgroundColor: Color(0xffFFC107),
+                                ),
                                 onPressed: () {},
                                 icon: Icon(LineIcons.alternateExchange,
                                     color: Colors.white),
@@ -198,15 +200,30 @@ class HomeScreen extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text(
-                              "Departure",
-                              style: TextStyle(color: Colors.grey.shade600),
+                            GestureDetector(
+                              onTap: () => Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (_) => BoardingPassScreen(),
+                                ),
+                              ),
+                              child: Text(
+                                "Departure",
+                                style: TextStyle(color: Colors.grey.shade600),
+                              ),
                             ),
-                            Text(
-                              "Sat,8 mar 2025",
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  letterSpacing: 1.0),
+                            GestureDetector(
+                              onTap: () => Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) =>
+                                          BoardingPassScreen())),
+                              child: Text(
+                                "Sat,8 mar 2025",
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    letterSpacing: 1.0),
+                              ),
                             )
                           ],
                         ),
@@ -275,7 +292,7 @@ class HomeScreen extends StatelessWidget {
                       ElevatedButton(
                         onPressed: () {},
                         style: ElevatedButton.styleFrom(
-                            backgroundColor: Color(0xff4C6EF5),
+                            backgroundColor: Color(0xffFFC107),
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(10)),
                             minimumSize: Size(double.infinity, 50)),
@@ -369,7 +386,7 @@ class ContainerWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
         decoration: BoxDecoration(
-          color: btncolor ? Color(0xff4C6EF5) : Colors.grey.shade300,
+          color: btncolor ? Color(0xffFFC107) : Colors.grey.shade300,
           borderRadius: BorderRadius.circular(10),
         ),
         height: 40,

@@ -8,7 +8,7 @@ class FlightDetailScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xff1B1F4B),
+      backgroundColor: Color(0xffFFC107),
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -19,7 +19,7 @@ class FlightDetailScreen extends StatelessWidget {
               padding: EdgeInsets.symmetric(horizontal: 20),
               height: 180,
               decoration: BoxDecoration(
-                color: Color(0xff1B1F4B),
+                color: Color(0xffFFC107),
                 image: DecorationImage(
                   image: AssetImage("images/2.png"),
                   opacity: 0.2,
@@ -161,7 +161,7 @@ class FlightDetailScreen extends StatelessWidget {
                             children: [
                               Icon(
                                 LineIcons.plane,
-                                color: Color(0xff1B1F4B),
+                                color: Color(0xffFFC107),
                               ),
                               Text(
                                 "Dubai,UAE(DXB)",
@@ -493,7 +493,7 @@ class FlightDetailScreen extends StatelessWidget {
                           height: 25,
                           width: 15,
                           decoration: BoxDecoration(
-                            color: Color(0xff1B1F4B),
+                            color: Color(0xffFFC107),
                             borderRadius: BorderRadius.only(
                               bottomRight: Radius.circular(20),
                               topRight: Radius.circular(20),
@@ -517,7 +517,7 @@ class FlightDetailScreen extends StatelessWidget {
                           height: 25,
                           width: 15,
                           decoration: BoxDecoration(
-                            color: Color(0xff1B1F4B),
+                            color: Color(0xffFFC107),
                             borderRadius: BorderRadius.only(
                               bottomLeft: Radius.circular(20),
                               topLeft: Radius.circular(20),
@@ -531,7 +531,7 @@ class FlightDetailScreen extends StatelessWidget {
                       child: ElevatedButton(
                         onPressed: () {},
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: Color(0xff1B1F4B),
+                          backgroundColor: Color(0xffFFC107),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(10),
                           ),

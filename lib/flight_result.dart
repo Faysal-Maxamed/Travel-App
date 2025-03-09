@@ -7,7 +7,7 @@ class ResultScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xff1B1F4B),
+      backgroundColor: Color(0xffFFC107),
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -18,7 +18,7 @@ class ResultScreen extends StatelessWidget {
               padding: EdgeInsets.symmetric(horizontal: 20),
               height: 230,
               decoration: BoxDecoration(
-                color: Color(0xff1B1F4B),
+                color: Color(0xffFFC107),
                 image: DecorationImage(
                   image: AssetImage("images/2.png"),
                   opacity: 0.2,
@@ -236,10 +236,6 @@ class TicketWidget extends StatelessWidget {
                       titleText,
                       style: TextStyle(fontWeight: FontWeight.bold),
                     ),
-                    // Text(
-                    //   "",
-                    //   style: TextStyle(fontWeight: FontWeight.bold),
-                    // ),
                   ],
                 ),
                 Spacer(),
@@ -295,7 +291,7 @@ class TicketWidget extends StatelessWidget {
                   children: [
                     Icon(
                       LineIcons.plane,
-                      color: Color(0xff1B1F4B),
+                      color: Color(0xffFFC107),
                     ),
                     Column(
                       children: [
@@ -353,7 +349,7 @@ class TicketWidget extends StatelessWidget {
                 height: 25,
                 width: 15,
                 decoration: BoxDecoration(
-                  color: Color(0xff1B1F4B),
+                  color: Color(0xffFFC107),
                   borderRadius: BorderRadius.only(
                     bottomRight: Radius.circular(20),
                     topRight: Radius.circular(20),
@@ -375,7 +371,7 @@ class TicketWidget extends StatelessWidget {
                 height: 25,
                 width: 15,
                 decoration: BoxDecoration(
-                  color: Color(0xff1B1F4B),
+                  color: Color(0xffFFC107),
                   borderRadius: BorderRadius.only(
                     bottomLeft: Radius.circular(20),
                     topLeft: Radius.circular(20),
@@ -435,7 +431,7 @@ class ContainerWidget extends StatelessWidget {
     return Container(
         margin: EdgeInsets.only(right: 10),
         decoration: BoxDecoration(
-          color: btncolor ? Color(0xff4C6EF5) : Color.fromARGB(255, 35, 39, 78),
+          color: btncolor ? Color(0xffFFC107) : Color.fromARGB(255, 35, 39, 78),
           borderRadius: BorderRadius.circular(10),
         ),
         height: 40,
