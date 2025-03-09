@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:line_icons/line_icons.dart';
 
-class DetailScreen extends StatelessWidget {
-  const DetailScreen({super.key});
+class ResultScreen extends StatelessWidget {
+  const ResultScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

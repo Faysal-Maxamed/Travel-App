@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:line_icons/line_icons.dart';
-import 'package:travel_app/detail.dart';
+import 'package:travel_app/flight_detail.dart';
+import 'package:travel_app/flight_result.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -147,7 +148,7 @@ class HomeScreen extends StatelessWidget {
                             onTap: () => Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (_) => DetailScreen(),
+                                builder: (_) => ResultScreen(),
                               ),
                             ),
                             child: FlightWidget(
@@ -171,10 +172,16 @@ class HomeScreen extends StatelessWidget {
                       SizedBox(
                         height: 10,
                       ),
-                      FlightWidget(
-                        firstText: "SEO",
-                        locationText: "Seoul,Korea",
-                        whereText: "To",
+                      GestureDetector(
+                        onTap: () => Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (_) => FlightDetailScreen())),
+                        child: FlightWidget(
+                          firstText: "SEO",
+                          locationText: "Seoul,Korea",
+                          whereText: "To",
+                        ),
                       ),
                       SizedBox(
                         height: 10,
